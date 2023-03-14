@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Scale prospecting</title>
+    <link rel="stylesheet" type="text/css" href="assets/fonts/stylesheet.css">
+    <link href="assets/css/toastr.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-app width-450 without-login">
+        <!-- Login screen -->
+        <header>
+            <div class="container">
+                <div class="logo-wrapper">
+                    <img src="assets/images/scale-logo.png">
+                </div>
+            </div>
+        </header>
+
+        <section class="login-screen">
+            <div class="mid-content">
+                <div class="container">
+                    <p class="lg-hdg">Welcome to Scale Prospecting</p>
+                    <p class="sm-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry</p>
+                    <form class="forms" id="login_form" name="login_form">
+                        <div class="form_group">
+                            <img src="assets/images/msg.svg">
+                            <input type="text" name="email" placeholder="Enter email address">
+                        </div>
+                        <div class="form_group">
+                            <img src="assets/images/lock.svg">
+                            <input type="text" name="password" placeholder="Enter password">
+                        </div>
+                        <a href="#" class="forget-pass">Forgot password?</a>
+                        <div class="blue-btn parent_loader">
+                            <div id="loader" class="login_loader" style="display:none"></div>
+                            <button class="blue-btn" style="margin:0">
+                                LOGIN</button>
+
+                        </div>
+                    </form>
+                    <button class="blue-btn" id="signup" style="margin:0">
+                        Signup</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="signup-screen" style="display:none;">
+            <div class="mid-content">
+                <div class="container">
+                    <p class="lg-hdg">Welcome to Scale Prospecting</p>
+                    <p class="sm-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum
+                        has been the industry</p>
+                    <form class="forms" id="signup_form" name="signup_form">
+                        <div class="form_group">
+                            <img src="assets/images/msg.svg">
+                            <input type="text" name="name" placeholder="Enter Full Name">
+                        </div>
+                        <div class="form_group">
+                            <img src="assets/images/msg.svg">
+                            <input type="text" name="email" placeholder="Enter email address">
+                        </div>
+                        <div class="form_group">
+                            <img src="assets/images/lock.svg">
+                            <input type="text" name="password" placeholder="Enter password">
+                        </div>
+                        <a href="#" class="forget-pass">Forgot password?</a>
+                        <div class="blue-btn parent_loader">
+                            <div id="loader" class="login_loader" style="display:none"></div>
+                            <button class="blue-btn" style="margin:0">
+                                Signup </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forget screen -->
+        <section class="forgot-screen" style="display:none;">
+            <div class="mid-content">
+                <div class="container">
+                    <p class="lg-hdg">Forgot password</p>
+                    <p class="sm-text">Provide you registered email address to reset passowrd</p>
+                    <form class="forms" id="forgotpassword" name="sendotp">
+                        <div class="form_group">
+                            <img src="assets/images/msg.svg">
+                            <input type="text" name="email" placeholder="Enter email address">
+                        </div>
+                        <a href="#" class="forget-pass back-login">Back to login</a>
+                        <div class="blue-btn parent_loader">
+                            <div id="loader" class="otp_loader" style="display:none"></div>
+                            <button class="blue-btn" style="margin:0">
+                                SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Password screen -->
+        <section class="password-screen" style="display:none;">
+            <div class="mid-content">
+                <div class="container">
+                    <p class="lg-hdg">Verification code has been sent to your email</p>
+                    <form class="forms" id="setpassword" name="setpassword">
+                        <div class="form_group">
+                            <img src="assets/images/key.svg">
+                            <input type="text" name="otp" placeholder="Verification code">
+                        </div>
+                        <div class="form_group">
+                            <img src="assets/images/lock.svg">
+                            <input type="text" name="password" id="password" placeholder="New password">
+                        </div>
+                        <div class="form_group">
+                            <img src="assets/images/lock.svg">
+                            <input type="text" name="confirmpassword" placeholder="Confirm password">
+                        </div>
+                        <div class="blue-btn parent_loader">
+                            <div id="loader" class="password_loader" style="display:none"></div>
+                            <button class="blue-btn" style="margin:0">
+                                SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="main-app width-800" id="tags-screen" style="display:none;">
+        <header>
+            <div class="container">
+                <div class="logo-wrapper">
+                    <img src="assets/images/scale-logo.png">
+                    <ul class="munubar">
+                        <li><a href="#"><img src="assets/images/home.svg"></a></li>
+                        <li class="logout-ext"><a href="#"><img src="assets/images/setting.svg"></a></li>
+                        <li><a href="#"><img src="assets/images/dots.svg"></a></li>
+                        <li class="users">
+                            <a href="#">
+                                <img src="assets/images/user.png">
+                                <span class="user-mail">user@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Messenger screen -->
+        <div class="messenger-tags">
+            <div class="container">
+                <div class="messenger-wrapper">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="lg-hdg mb-0">Your Tags</span>
+                        <form class="search-form">
+                            <input type="text" name="" placeholder="Search Tags">
+                            <button>Add</button>
+                        </form>
+                    </div>
+
+                    <div class="tags-box">
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <span class="footer-text">Powered By <a href="#"> ScaleProspecting.com</a> All Rights Reserved 2023</span>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/jquery.validate.js"></script>
+<script src="assets/js/toastr.min.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<script src="config.js"></script>
+<script src="popup.js"></script>
+
+</html>

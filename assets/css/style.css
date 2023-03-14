@@ -1,0 +1,336 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+* {
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.main-app {
+    /*width: 450px;
+    height: 575px;*/
+    overflow-y: scroll !important;
+}
+.width-450 {
+    width: 450px;
+}
+.width-800 {
+    width: 800px;
+}
+.lg-hdg {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #494949;
+    margin: 0 0 16px;
+}
+.sm-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #434343;
+    margin: 0 0 12px;
+}
+
+
+.container {
+    padding: 0 15px;
+}
+
+header {
+    background: #0B0818;
+    padding: 12px 0;
+}
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul.munubar {
+    display: flex;
+    grid-gap: 12px;
+}
+.users>a {
+    position: relative;
+}
+.user-mail {
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    color: #fff;
+    font-size: 9px;
+}
+footer {
+    background: #0b0818;
+    padding: 12px 0;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}
+
+.footer-text a {
+    color: #18B6FA;
+    font-style: italic;
+}
+
+.forms {
+    margin-top: 50px;
+    min-height: 250px;
+}
+.mid-content {
+    background-image: url(../images/Rocket-bg.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 45px 0;
+    max-width: 330px;
+    margin: 0 auto;
+}
+.forms input {
+    border: none;
+    background: transparent;
+}
+.forms .form_group {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 15% 83%;
+    padding: 6px 15px;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    min-height: 42px;
+}
+.blue-btn {
+    background: #8EAFC0;
+    border: none;
+    padding: 7px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+.forget-pass {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #118EC4;
+    text-align: right;
+    display: block;
+    padding-top: 10px;
+}
+
+#loader {
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+
+  .parent_loader
+  {
+    display:flex;
+  }
+
+/* _____________ Start css for messanger screen ___________ */
+.main-app-lg {
+    width: 800px;
+    height: 575px;
+    overflow-y: scroll !important;
+}
+.add-btn {
+    background: #562f5b;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+}  
+.border-none {
+    border: none;
+    background: transparent;
+}
+.messenger-wrapper {
+    margin: 20px 0;
+    min-height: 430px;
+}
+.profiler {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+.edit-btn i {
+    color: #fff;
+}
+.tags-text {
+    box-shadow: 0 0 7px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    padding: 10px 0;
+}
+.profile-items {
+    display: grid;
+    grid-template-columns: 9% 18% 67% 5%;
+    align-items: center;
+    margin: 7px;
+}
+.profile-items>img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.messenger-right .blue-btn {
+    margin: 6px 0px;
+}
+.blue-btn-01 {
+    background: #18B6FA;
+}
+.blue-btn-02 {
+    background: #3792E7;
+}
+.tags-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    padding: 22px 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    background: #0e6fa9;
+}
+.tag-red {
+    background: #D53A3F;
+}
+.tag-black {
+    background: #000;
+}
+.tag-green {
+    background: #27A844;
+}
+.tag-purple {
+    background: #4C1131;
+}
+.tag-purple-lt {
+    background: #A64D79;
+}
+.tag-yellow {
+    background: #FFA500;
+}
+.tag-purple-md {
+    background: #562F5B;
+}
+.digits {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    margin: 10px 0;
+    min-height: 32px;
+}
+.search-form input {
+    border: 1px solid #e9e9e9;
+    font-weight: 400;
+    font-size: 12px;
+    color: #9A9A9A;
+    border-radius: 5px;
+}
+.search-form button {
+    background: #0c96e7;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.tags-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+.tags-item + .tags-text {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: .5s;
+    background:#0e6fa9;
+}
+.tags-item.active + .tags-text {
+    height: 250px;
+    padding: 10px 0;
+    overflow-y: scroll;
+    margin-top: 1px;
+    
+}
+
+
+
+.tags-text::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+    background-color: #F5F5F5;
+}
+.tags-text::-webkit-scrollbar {
+    width: 3px;
+    background-color: #F5F5F5;
+}
+.tags-text::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
